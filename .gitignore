@@ -1,0 +1,24 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Environment
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ML Artifacts
+models/
+artifacts/
+
+# Data
+data/raw/
+data/processed/
+
+# VS Code
+.vscode/
+
+# Logs
+logs/
