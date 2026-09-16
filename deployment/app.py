@@ -20,11 +20,16 @@ st.set_page_config(
 # Load Model
 # ============================================================
 
+# BASE_DIR = Path(__file__).resolve().parent.parent
+# MODEL_PATH = BASE_DIR / "models" / "customer_churn_pipeline.joblib"
+
+# model = joblib.load(MODEL_PATH)
+
 BASE_DIR = Path(__file__).resolve().parent.parent
-MODEL_PATH = BASE_DIR / "models" / "customer_churn_pipeline.joblib"
 
-model = joblib.load(MODEL_PATH)
+model_path = BASE_DIR / "models" / "customer_churn_pipeline.joblib"
 
+model = joblib.load(model_path)
 
 # ============================================================
 # Feature Engineering
